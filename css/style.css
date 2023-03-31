@@ -3,6 +3,9 @@
 }  */
 	
 
+body {
+	font-family: Montserrat;
+}
 
 .text-white h1,
 .text-white h2,
@@ -139,17 +142,17 @@
 	color: #f2f2f2;
 }
 
-.social a {
+.social-inst {
 	display: inline-flex;
 	display: -ms-inline-flex;
 	display: -webkit-inline-flex;
 	display: -ms-inline-flexbox;
 	display: -webkit-inline-box;
-	width: 35px;
-	height: 35px;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	color: #f2f2f2;
-	background: #0a41b8;
+	background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
 	font-size: 17px;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -158,6 +161,87 @@
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
+}
+
+.social-fb {
+	display: inline-flex;
+	display: -ms-inline-flex;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: -webkit-inline-box;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	color: #f2f2f2;
+	background:  #1778f2;
+	font-size: 17px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+
+.social-linkedin {
+	display: inline-flex;
+	display: -ms-inline-flex;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: -webkit-inline-box;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	color: #f2f2f2;
+	background: #0072b1;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+
+.social-github {
+	display: inline-flex;
+	display: -ms-inline-flex;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: -webkit-inline-box;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	color: #f2f2f2;
+	background: #171515;
+	font-size: 17px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+
+.social-fb:hover {
+	background-color: #ddd;
+}
+
+.social-inst:hover {
+	color: #d9317a;
+	background: #ddd;
+	/* color: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); */
+}
+
+.social-linkedin:hover {
+	background-color: #ddd;
+}
+
+.social-github:hover {
+	background-color: #ddd;
+	color:#171515;
 }
 
 .social-margin li {
@@ -185,6 +269,17 @@
 	border-radius: 15px;
 	margin-bottom: 25px;
 	padding: 50px;
+}
+
+.sec-container-half {
+	max-width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	box-shadow: 0px 0px 8px 5px rgba(0,0,0,.2);
+	border-radius: 15px;
+	margin-bottom: 25px;
+	padding: 50px;
+	text-align: center;
 }
 
 /*----------------
@@ -216,6 +311,10 @@
 
 .bio h3 {
 	padding-bottom: 10px;
+}
+
+.interests {
+	padding-top:20px;
 }
 
 /*------------------
@@ -281,165 +380,17 @@
 }
 
 
-
-
-
 /*------------------
-	a section
+	contact section
 --------------------*/
 
-.a-section {
-	margin-bottom: 50px;
+.contact-container h3{
+	padding-bottom: 15px;
 }
 
-.a-title {
-	text-align: center;
-	margin-top: 25px;
-	margin-bottom:  25px;
-	position: relative;
-	border-bottom: 2px solid #FF2793;
-	margin-left: 100px;
-	margin-right: 100px
-}
-
-.a-title h1 {
-	margin-bottom:  30px;
-	color: #333;
-}
-
-.a-title img {
-	margin-bottom: 15px;
-	height: 60px;
-	width: 60px;
-	border: 2px solid #FF2793;
-	border-radius: 10px;
-}
-
-.abc-kindergarten p {
-	text-align: justify;
-	text-indent: 40px;
-	padding-bottom: 50px;
-	padding-left: 180px;
-	padding-right: 180px;
-}
-
-.feature-pic {
-	text-align: center;
-	margin-top:  25px;
-	margin-bottom: 50px;
-	width: 50%;
-
-}
-
-.feature-pic img {
-	object-fit: contain;
-	width: 450px;
-	border-radius: 20px;
-	-moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,.2);
-  -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,.2);
-  box-shadow: 0px 0px 5px 5px rgba(0,0,0,.2);
-}
-
-.feature-text {
-	border: 2px solid #FF2793;
-	margin-bottom: 70px;
-	margin-top: 30px;
-	border-radius: 20px;
-}
-
-.feature-text h3 {
-	padding-top: 25px;
-	color: #333;
-}
-
-.feature-text p {
-	padding-top: 25px;
-	color: #333;
-}
-
-/*------------------
-	b section
---------------------*/
-
-.structure-container {
-	margin-bottom: 30px;
-	border-bottom: 2px solid #FF2793;
-}
-
-.structure-section {
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-
-.structure-section h1 {
-	padding-bottom: 10px;
-	border-bottom: 2px solid #FF2793;
-}
-
-.text-bold {
-	font-weight: bold;
-}
-
-.structure-body a {
+.contact-info a:hover {
+	color:#333;
 	text-decoration: none;
-}
-
-.structure-body a:hover {
-	color:  #FF2793;
-}
-
-/*---------------------
-	End Section
-------------------*/
-
-.end-section {
-	background-color: #333;
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-
-.end-sec1 {
-	text-align: center;
-}
-
-.end-sec1 img {
-	border: 4px solid #FF2793;
-	border-radius:  30px;
-	height: 150px;
-	width:  150px;
-}
-
-.end-sec1 p {
-	padding-top: 25px;
-}
-
-.end-sec2 li {
-	list-style: none;
-	display: block;
-	padding-top: 10px;
-}
-
-.end-sec2 a {
-	text-decoration: none;
-}
-
-.end-sec2 a:hover {
-	color: #FF2793;
-}
-	
-
-
-.end-sec3-title {
-	padding-left: 30px;
-}
-
-.end-sec3 li {
-	list-style: none;
-}
-
-.end-sec3 img {
-	width: 200px;
-	margin-top: 15px;
 }
 
 
@@ -453,136 +404,7 @@
 	padding: 5px 5px 5px;
 }
 
-/*-------------------
-	Banner
-------------------*/
 
-.banner img{
-	width: 100%;
-}
-
-/*--------------------------
-	About Us page
--------------------------*/
-
-.about-us {
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-
-.about-us h1 {
-	padding-bottom: 10px;
-	border-bottom: 2px solid #FF2793;
-}
-
-.about-us p {
-	padding-top: 10px;
-	text-align: justify;
-	text-indent: 40px;
-}
-
-.latest-news {
-	padding-top: 30px;
-}
-
-.latest-news a {
-	text-decoration: none;
-}
-
-.latest-news ul li {
-	margin-top: 15px;
-	list-style: none;
-}
-
-.news-top {
-	border-bottom: 2px solid #797979;
-}
-
-.news-top a {
-	font-size: 23px;
-	color: #333;
-}
-
-.news-top a:hover {
-	color: #FF2793;
-}
-
-.news-title a:hover {
-	color: #FF2793;
-}
-
-
-/*---------------
-	News section
------------------*/
-
-.news-a {
-	padding-top: 30px;
-}
-
-.news-top1 h1 {
-	border-bottom: 2px solid #FF2793;
-	padding-bottom: 10px;
-}
-
-.news-body {
-	margin-top: 20px;
-}
-
-.news-body a {
-	font-size: 25px;
-}
-
-.news-body p {
-	margin-top: 5px;
-}
-
-.news-item {
-	display: block;
-	border-bottom: 1px solid grey;
-	margin-bottom: 30px;
-}
-
-.news-item a {
-	text-decoration: none;
-}
-
-.news-item a:hover {
-	color: #FF2793;
-}
-
-.news-item span {
-	color: #848482;
-}
-
-/*------------------
-	News page
------------------*/
-.news-page1 {
-	margin-bottom: 30px;
-}
-
-.news-page1-title h1{
-	padding-top: 30px;
-	padding-bottom: 10px;
-	border-bottom: 2px solid #FF2793;
-}
-
-.news-page1-body span {
-	color: #848482;
-}
-
-.news-page1-body p {
-	padding-top: 10px;
-	text-indent: 40px;
-}
-
-.news-page1-body img {
-	float: right;
-	height: 200px;
-	margin: 10px;
-	border-radius: 10px;
-}
 
 
 /*--------------------
@@ -649,21 +471,7 @@ label {
 	margin-bottom: 50px;
 }
 
-/*---------------
-	Contact page
------------------*/
 
-.contact-us {
-	padding-top: 30px;
-}
-
-.contact-us-top {
-	border-bottom: 2px solid #FF2793;
-}
-
-.contact-us-body {
-	padding-top: 20px;
-}
 
 /*-----------------------
 	Responsive
