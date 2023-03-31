@@ -1,6 +1,6 @@
-body{ 
+/* body{ 
 	overflow-x :hidden; 
-	} 
+}  */
 	
 
 
@@ -164,6 +164,15 @@ body{
 	margin: 5px;
 }
 
+.top-name {
+	border: 1px solid #0a41b8;
+	padding: 5px;
+	padding-left:15px;
+	padding-right: 15px;
+	border-radius: 10px;
+	background-color: #0a41b8;
+}
+
 /*----------------
 	section container
 -----------------------*/
@@ -232,8 +241,7 @@ body{
 	margin-left: auto;
 	margin-right: auto; */
 	text-align: center;
-	font-size: 25px;
-	transform: scale(2,1);
+	font-size: 35px;
 	margin-bottom: 20px;
 	/* margin-right: 50px; */
 }
@@ -690,7 +698,7 @@ label {
 }
 .topnav.responsive {position: relative;}
 .topnav.responsive .icon {
-    position: absolute;
+    /* position: absolute; */
     right: 0;
     top: 0;
 }
@@ -714,7 +722,8 @@ label {
 
 /* Small mobile: 320px */
 @media only screen and (max-width: 479px) {
-.feature-pic {
+
+	.feature-pic {
 	margin-top:  25px;
 	margin-bottom: 15px;
 	padding-left: 0px;
